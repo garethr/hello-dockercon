@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  app:
+    image: hello-dockercon:1
+    ports:
+     - 8080:8080
+    deploy:
+      replicas: 1
+  db:
+    image: redis
